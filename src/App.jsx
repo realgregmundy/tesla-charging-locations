@@ -84,11 +84,11 @@ const App = (props) => {
   }
 
   const showLoader = () => {
-    return(<p data-testid="map">Loading....</p>)
+    return(<p>Loading....</p>)
   }
 
   return (
-    <div data-testid="map">
+    <div>
       {coordinates !== null ? renderMap() : showLoader()}
     </div>
   );
