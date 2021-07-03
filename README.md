@@ -19,18 +19,24 @@ The image above shows a sample plot of the dataset. Locations in green are Super
 
 To run the application locally:
 
-1. Clone this repository.
+### Clone this repository.
 ```
 $ git clone https://github.com/realgregmundy/tesla-charging-locations.git
 ```
-2. Install dependencies.
+
+### Configure environment variables.
+
+### Install dependencies.
 ```
 $ yarn install
 ```
 
-3. Start the application
+### Start the application.
 ```
 $ yarn start
 ```
+
+### View Application
+Navigate to `http://localhost:3000` in your favorite web browser.
 
 
