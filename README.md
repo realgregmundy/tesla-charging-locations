@@ -14,3 +14,23 @@ It happens that Tesla provides a complete listing of all charging stations world
 
 The image above shows a sample plot of the dataset. Locations in green are Superchargers, and the ones in yellow are standard chargers.
 
+
+## Installation
+
+To run the application locally:
+
+1. Clone this repository.
+```
+$ git clone https://github.com/realgregmundy/tesla-charging-locations.git
+```
+2. Install dependencies.
+```
+$ yarn install
+```
+
+3. Start the application
+```
+$ yarn start
+```
+
+
