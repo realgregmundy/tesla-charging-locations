@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Map, Marker, InfoWindow, GoogleApiWrapper } from 'google-maps-react';
+import { Map, Marker, GoogleApiWrapper } from 'google-maps-react';
 import axios from 'axios';
 
 const DEFAULT_COORDS = { latitude: 37.4419, longitude: -122.1430 };
@@ -76,11 +76,7 @@ const App = (props) => {
             url: HOME_ICON,
             anchor: new props.google.maps.Point(32,32),
             scaledSize: new props.google.maps.Size(32,32) 
-          }}
-          >
-          <InfoWindow>
-            <p>Info goes here</p>
-          </InfoWindow>
+          }}>
         </Marker>
         {renderMarkers()}
       </Map>
@@ -88,13 +84,13 @@ const App = (props) => {
   }
 
   const showLoader = () => {
-    return(<p>Loading....</p>)
+    return(<p data-testid="map">Loading....</p>)
   }
 
   return (
-    <>
-    {coordinates !== null ? renderMap() : showLoader()}
-    </>
+    <div data-testid="map">
+      {coordinates !== null ? renderMap() : showLoader()}
+    </div>
   );
 }
 
